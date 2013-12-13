@@ -4,7 +4,7 @@ Tags: plugin, custom logo, customize, login, login screen, logo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WVZQ3MZAKTU2
 Requires at least: 3.1
 Tested up to: 3.8
-Stable tag: 1.0.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,7 @@ This plugin requires the URL to the image file you wish to use as your WordPress
 6. Paste the logo file URL in the first box.
 
 = What dimensions should my WordPress Login Logo be? =
-The image file should be 548 px wide and 126 px tall.
+The image file should be 548 px wide and 126 px tall for WordPress versions prior to 3.8. For 3.8, please use an image file with dimensions of 80px wide and 80 px tall.
 
 = Does my WordPress Login Logo have to be uploaded to my WordPress site? =
 No. You can use this plugin to point to an image file on another website if you want to. For example, if you have an image uploaded to a cloud storage site, you can use the File URL on that site to display the image as long as the other site allows it. Some sites may not want you to link directly to files on their servers, so it is best to check with them first to make sure you are not violating any of their terms.
@@ -51,6 +51,9 @@ You can change the following settings in your WordPress Dashboard by clicking Se
 1. Customize the login screen however you want it to look. Use different fonts, change the background colors, fonts, and more!
 
 == Changelog ==
+= 1.1 =
+* Updated compatibility with WordPress 3.8.
+
 = 1.0.1 =
 * Bug Fix.
 
@@ -58,6 +61,9 @@ You can change the following settings in your WordPress Dashboard by clicking Se
 * Initial release.
 
 == Upgrade Notice ==
+= 1.1 =
+* Updated compatibility with WordPress 3.8.
+
 = 1.0.1 =
 * Bug Fix.
 

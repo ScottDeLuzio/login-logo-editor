@@ -4,7 +4,7 @@ Tags: plugin, custom logo, customize, login, login screen, logo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WVZQ3MZAKTU2
 Requires at least: 3.1
 Tested up to: 3.8
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,9 @@ You can change the following settings in your WordPress Dashboard by clicking Se
 1. Customize the login screen however you want it to look. Use different fonts, change the background colors, fonts, and more!
 
 == Changelog ==
+= 1.1.1 =
+* Minor updates
+
 = 1.1 =
 * Updated compatibility with WordPress 3.8.
 
@@ -61,11 +64,5 @@ You can change the following settings in your WordPress Dashboard by clicking Se
 * Initial release.
 
 == Upgrade Notice ==
-= 1.1 =
-* Updated compatibility with WordPress 3.8.
-
-= 1.0.1 =
-* Bug Fix.
-
-= 1.0 =
-* Initial release.
+= 1.1.1 =
+* Minor updates

@@ -4,7 +4,7 @@
    Plugin URI: http://oizuled.com/wordpress-plugins/wordpress-login-logo-editor/
    Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WVZQ3MZAKTU2
    Description: A plugin to change the logo displayed on the admin login screen.
-   Version: 1.1.1
+   Version: 1.2
    Author: Scott DeLuzio
    Author URI: http://oizuled.com
    License: GPL2
@@ -26,6 +26,12 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 	*/
 
+/* Add language support */
+function login_lang() {
+	load_plugin_textdomain('login_translate', false, dirname(plugin_basename(__FILE__)) . '/lang/');
+}
+add_action('init', 'login_lang');
+	
 /* Settings Page */
 
 // Hook for adding admin menus
@@ -110,4 +116,15 @@ if(!isset($oizuledtitle)) {
 }
     return $oizuledtitle;
 }
+
+add_action('admin_enqueue_scripts', 'oizuled_upload_script');
+ 
+function oizuled_upload_script() {
+    if (isset($_GET['page']) && $_GET['page'] == 'oizuledloginlogo') {
+        wp_enqueue_media();
+        wp_register_script('image-upload-js', WP_PLUGIN_URL.'/login-logo-editor-by-oizuled/image-upload.js', array('jquery'));
+        wp_enqueue_script('image-upload-js');
+    }
+}
+
 ?>

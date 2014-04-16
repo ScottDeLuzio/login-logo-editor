@@ -66,5 +66,6 @@ Sure! Once you have translated it, let me know and I'll be sure to get your tran
 * Initial release.
 
 == Upgrade Notice ==
-= 1.1.1 =
-* Minor updates
+= 1.2 =
+* Added ability to use a logo from either the media library, uploaded from your computer, or by manually entering a URL to an image stored on another website.
+* Added translation support.

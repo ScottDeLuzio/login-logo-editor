@@ -1,16 +1,16 @@
 <?php
    /*
-   Plugin Name: Login Logo Editor by Oizueld
-   Plugin URI: http://oizuled.com/wordpress-plugins/wordpress-login-logo-editor/
-   Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WVZQ3MZAKTU2
+   Plugin Name: Login Logo Editor
+   Plugin URI: https://surpriseazwebservices.com/wordpress-plugins/wordpress-login-logo-editor/
+   Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQMNHMR86QKNY
    Description: A plugin to change the logo displayed on the admin login screen.
-   Version: 1.2
+   Version: 1.2.1
    Author: Scott DeLuzio
-   Author URI: http://oizuled.com
+   Author URI: https://surpriseazwebservices.com
    License: GPL2
    */
    
-	/*  Copyright 2013  Scott DeLuzio  (email : scott (at) oizuled.com)
+	/*  Copyright 2013  Scott DeLuzio  (email : scott (at) surpriseazwebservices.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 

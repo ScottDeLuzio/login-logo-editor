@@ -1,17 +1,17 @@
-=== Login Logo Editor by Oizuled ===
+=== Login Logo Editor ===
 Contributors: scott.deluzio
 Tags: plugin, custom logo, customize, login, login screen, logo
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WVZQ3MZAKTU2
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQMNHMR86QKNY
 Requires at least: 3.5
-Tested up to: 3.9
-Stable tag: 1.2
+Tested up to: 4.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Easily lets you edit the form and logo shown when logging into your WordPress site.
 
 == Description ==
-WordPress Login Logo Editor by Oizuled is a plugin that easily lets you edit the form and logo shown when logging into your WordPress site. WordPress Login Logo Editor allows you to edit:
+WordPress Login Logo Editor is a plugin that easily lets you edit the form and logo shown when logging into your WordPress site. WordPress Login Logo Editor allows you to edit:
 
 * The image above the login form on your WordPress site.
 * The URL that a user gets directed to when the logo is clicked. By default you are directed to http://wordpress.org.
@@ -49,6 +49,9 @@ Sure! Once you have translated it, let me know and I'll be sure to get your tran
 1. Customize the login screen however you want it to look. Use different fonts, change the background colors, fonts, and more!
 
 == Changelog ==
+= 1.2.1 =
+* Update WP 4.0 compatibility
+
 = 1.2 =
 * Added ability to use a logo from either the media library, uploaded from your computer, or by manually entering a URL to an image stored on another website.
 * Added translation support.
@@ -66,6 +69,5 @@ Sure! Once you have translated it, let me know and I'll be sure to get your tran
 * Initial release.
 
 == Upgrade Notice ==
-= 1.2 =
-* Added ability to use a logo from either the media library, uploaded from your computer, or by manually entering a URL to an image stored on another website.
-* Added translation support.
+= 1.2.1 =
+* Update WP 4.0 compatibility

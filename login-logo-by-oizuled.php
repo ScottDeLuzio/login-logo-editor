@@ -1,16 +1,16 @@
 <?php
    /*
-   Plugin Name: Login Logo Editor by Oizueld
-   Plugin URI: http://oizuled.com/wordpress-plugins/wordpress-login-logo-editor/
-   Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WVZQ3MZAKTU2
+   Plugin Name: Login Logo Editor
+   Plugin URI: https://surpriseazwebservices.com/wordpress-plugins/wordpress-login-logo-editor/
+   Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQMNHMR86QKNY
    Description: A plugin to change the logo displayed on the admin login screen.
-   Version: 1.0
+   Version: 1.2.1
    Author: Scott DeLuzio
-   Author URI: http://oizuled.com
+   Author URI: https://surpriseazwebservices.com
    License: GPL2
    */
    
-	/*  Copyright 2013  Scott DeLuzio  (email : scott (at) oizuled.com)
+	/*  Copyright 2013  Scott DeLuzio  (email : scott (at) surpriseazwebservices.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -26,6 +26,12 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 	*/
 
+/* Add language support */
+function login_lang() {
+	load_plugin_textdomain('login_translate', false, dirname(plugin_basename(__FILE__)) . '/lang/');
+}
+add_action('init', 'login_lang');
+	
 /* Settings Page */
 
 // Hook for adding admin menus
@@ -40,7 +46,12 @@ function oizuled_login_logo_add_pages() {
 add_action('admin_init', 'register_oizuled_login_logo_settings');
 
 function activate_login_logo() {
-  add_option('oizuled-login-logo-img', plugins_url( 'wordpress-logo.png' , __FILE__));
+  $oizuled_wp_ver = get_bloginfo('version');
+  if ($oizuled_wp_ver < 3.8) {
+	add_option('oizuled-login-logo-img', plugins_url( 'wordpress-logo.png' , __FILE__));
+  } else {
+	add_option('oizuled-login-logo-img', plugins_url( 'w-logo-blue.png' , __FILE__));
+  }
   add_option('oizuled-login-logo-link', 'http://wordpress.org');
   add_option('oizuled-login-logo-title', 'Powered by WordPress');
   add_option('oizuled-login-logo-css', '');
@@ -65,7 +76,7 @@ function register_oizuled_login_logo_settings() {
 
 // Display the page content for the login logo submenu
 function oizuled_login_logo_settings_page() {
-	include(WP_PLUGIN_DIR.'/login-logo-by-oizuled/options.php');  
+	include(WP_PLUGIN_DIR.'/login-logo-editor-by-oizuled/options.php');  
 }
 	
 /* Reference CSS File */
@@ -105,4 +116,15 @@ if(!isset($oizuledtitle)) {
 }
     return $oizuledtitle;
 }
+
+add_action('admin_enqueue_scripts', 'oizuled_upload_script');
+ 
+function oizuled_upload_script() {
+    if (isset($_GET['page']) && $_GET['page'] == 'oizuledloginlogo') {
+        wp_enqueue_media();
+        wp_register_script('image-upload-js', WP_PLUGIN_URL.'/login-logo-editor-by-oizuled/image-upload.js', array('jquery'));
+        wp_enqueue_script('image-upload-js');
+    }
+}
+
 ?>

@@ -3,8 +3,8 @@ Contributors: scott.deluzio
 Tags: plugin, custom logo, customize, login, login screen, logo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQMNHMR86QKNY
 Requires at least: 3.5
-Tested up to: 4.0
-Stable tag: 1.2.1
+Tested up to: 4.5
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ Sure! Once you have translated it, let me know and I'll be sure to get your tran
 1. Customize the login screen however you want it to look. Use different fonts, change the background colors, fonts, and more!
 
 == Changelog ==
+= 1.2.2 =
+* Minor updates
+
 = 1.2.1 =
 * Update WP 4.0 compatibility
 
@@ -69,5 +72,5 @@ Sure! Once you have translated it, let me know and I'll be sure to get your tran
 * Initial release.
 
 == Upgrade Notice ==
-= 1.2.1 =
-* Update WP 4.0 compatibility
+= 1.2.2 =
+* Minor updates

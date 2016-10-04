@@ -4,7 +4,7 @@
    Plugin URI: https://surpriseazwebservices.com/wordpress-plugins/wordpress-login-logo-editor/
    Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQMNHMR86QKNY
    Description: A plugin to change the logo displayed on the admin login screen.
-   Version: 1.2.1
+   Version: 1.2.2
    Author: Scott DeLuzio
    Author URI: https://surpriseazwebservices.com
    License: GPL2

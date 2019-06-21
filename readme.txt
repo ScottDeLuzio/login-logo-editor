@@ -30,7 +30,6 @@ This plugin now allows you to select an image from your Media Library, upload an
 Make sure you click on the Save Changes button towards the bottom of the screen for any changes to take effect.
 
 = What dimensions should my WordPress Login Logo be? =
-~~The image file should be 548 px wide and 126 px tall for WordPress versions prior to 3.8. For 3.8+, please use an image file with dimensions of 80px wide and 80 px tall.~~
 The image can be any size you want it to be. It will be centered above the login form on your login page.
 
 = Does my WordPress Login Logo have to be uploaded to my WordPress site? =

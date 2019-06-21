@@ -3,8 +3,8 @@ Contributors: scott.deluzio
 Tags: plugin, custom logo, customize, login, login screen, logo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQMNHMR86QKNY
 Requires at least: 3.5
-Tested up to: 4.5
-Stable tag: 1.2.2
+Tested up to: 5.2.2
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ WordPress Login Logo Editor is a plugin that easily lets you edit the form and l
 * Style the login window with custom CSS.
 
 == Installation ==
-1. Download archive and unzip in wp-content/plugins or install via Plugins – Add New.
+1. Download archive and unzip in wp-content/plugins or install via Plugins > Add New.
 2. Activate the plugin through the Plugins menu in WordPress.
 
 == Frequently Asked Questions ==
@@ -30,7 +30,8 @@ This plugin now allows you to select an image from your Media Library, upload an
 Make sure you click on the Save Changes button towards the bottom of the screen for any changes to take effect.
 
 = What dimensions should my WordPress Login Logo be? =
-The image file should be 548 px wide and 126 px tall for WordPress versions prior to 3.8. For 3.8+, please use an image file with dimensions of 80px wide and 80 px tall.
+~~The image file should be 548 px wide and 126 px tall for WordPress versions prior to 3.8. For 3.8+, please use an image file with dimensions of 80px wide and 80 px tall.~~
+The image can be any size you want it to be. It will be centered above the login form on your login page.
 
 = Does my WordPress Login Logo have to be uploaded to my WordPress site? =
 No. You can use this plugin to point to an image file on another website if you want to. For example, if you have an image uploaded to a cloud storage site or if you run multiple websites, you can use the image file's URL on that site to display the image as long as the other (third party) site allows it. Some sites may not want you to link directly to files on their servers, so it is best to check with them first to make sure you are not violating any of their terms.
@@ -49,6 +50,12 @@ Sure! Once you have translated it, let me know and I'll be sure to get your tran
 1. Customize the login screen however you want it to look. Use different fonts, change the background colors, fonts, and more!
 
 == Changelog ==
+= 1.3.0 =
+* New: Logo images can be any size. Images will be centered above the login form.
+* Fix: Removed stylesheet from the login page that was not being used.
+* Fix: Updated the style of the login logo editor settings page for a cleaner look. Included a separate admin-style.css file.
+* Fix: Improved code quality.
+
 = 1.2.2 =
 * Minor updates
 
@@ -72,5 +79,8 @@ Sure! Once you have translated it, let me know and I'll be sure to get your tran
 * Initial release.
 
 == Upgrade Notice ==
-= 1.2.2 =
-* Minor updates
+= 1.3.0 =
+* New: Logo images can be any size. Images will be centered above the login form.
+* Fix: Removed stylesheet from the login page that was not being used.
+* Fix: Updated the style of the login logo editor settings page for a cleaner look. Included a separate admin-style.css file.
+* Fix: Improved code quality.

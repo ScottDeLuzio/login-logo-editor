@@ -4,7 +4,7 @@
 	 Plugin URI: https://amplifyplugins.com
 	 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQMNHMR86QKNY
 	 Description: A plugin to change the logo displayed on the admin login screen.
-	 Version: 1.3.0
+	 Version: 1.3.1
 	 Author: Scott DeLuzio
 	 Author URI: https://amplifyplugins.com
 	 License: GPL2
@@ -111,6 +111,8 @@ function lle_settings_page() {
 /* Show Logo */
 function lle_display_logo() {
 	$logo		= get_option( 'lle_login_logo_img' );
+	// Remove beginning '/' character if it exists. Otherwise getimagesize() function will fail.
+	$logo		= ltrim( $logo, '/' );
 	$css		= get_option( 'lle_login_logo_css' );
 	/**
 	 * This gets the dimensions of the image in an array

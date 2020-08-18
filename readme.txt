@@ -3,8 +3,8 @@ Contributors: scott.deluzio
 Tags: plugin, custom logo, customize, login, login screen, logo
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQMNHMR86QKNY
 Requires at least: 3.5
-Tested up to: 5.2.2
-Stable tag: 1.3.1
+Tested up to: 5.5.0
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ Sure! Once you have translated it, let me know and I'll be sure to get your tran
 1. Customize the login screen however you want it to look. Use different fonts, change the background colors, fonts, and more!
 
 == Changelog ==
+= 1.3.2 =
+* Updated tested up to version.
+
 = 1.3.1 =
 * Fix: Issue where relative URLs used for login logos were displaying PHP warnings in some cases.
 
@@ -81,5 +84,5 @@ Sure! Once you have translated it, let me know and I'll be sure to get your tran
 * Initial release.
 
 == Upgrade Notice ==
-= 1.3.1 =
-* Fix: Issue where relative URLs used for login logos were displaying PHP warnings in some cases.
+= 1.3.2 =
+* Updated tested up to version.

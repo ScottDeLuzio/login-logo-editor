@@ -4,8 +4,8 @@
 	 Plugin URI: https://amplifyplugins.com
 	 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VQMNHMR86QKNY
 	 Description: A plugin to change the logo displayed on the admin login screen.
-	 Version: 1.3.2
-	 Author: Scott DeLuzio
+	 Version: 1.3.3
+	 Author: AMP-MODE
 	 Author URI: https://amplifyplugins.com
 	 License: GPL2
 	 */
